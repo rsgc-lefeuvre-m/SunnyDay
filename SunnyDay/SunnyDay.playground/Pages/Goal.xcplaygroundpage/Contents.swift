@@ -19,12 +19,6 @@ let canvas = Canvas(width: 500, height: 400)
 //Draw Blue Rectangle
 canvas.fillColor = Color(hue: 195, saturation: 100, brightness: 100, alpha: 100)
 canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 500, height: 400, borderWidth: 0)
-2
-// Draw a circle in the middle of the canvas without a fill
-canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = true
-canvas.defaultBorderWidth = 5
-canvas.drawEllipse(centreX: canvas.width / 2, centreY: canvas.height / 2 , width: 100, height: 100)
 
 //Examples of using the remainder operator
 // and integer division
@@ -90,8 +84,22 @@ canvas.drawEllipse(centreX: 510, centreY: 360, width: 100, height: 100)
 canvas.borderColor = Color.red
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 30
-canvas.drawEllipse(centreX: 250, centreY: 20, width: 200, height: 80)
+canvas.defaultBorderWidth = 20
+canvas.drawEllipse(centreX: 250, centreY: 20, width: 480, height: 350)
+
+//Second line of Rainbow
+canvas.borderColor = Color.orange
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 20
+canvas.drawEllipse(centreX: 250, centreY: 20, width: 440, height: 320)
+    
+//Third line of Rainbow
+canvas.borderColor = Color.yellow
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 20
+canvas.drawEllipse(centreX: 250, centreY: 20, width: 420, height: 300)
 
 
 //: ## Template code
