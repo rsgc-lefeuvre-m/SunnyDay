@@ -80,28 +80,38 @@ canvas.fillColor = Color.white
 canvas.drawShapesWithBorders = false
 canvas.drawEllipse(centreX: 510, centreY: 360, width: 100, height: 100)
 
+
+
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 25
+
 //First line of Rainbow
 canvas.borderColor = Color.red
-canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 20
-canvas.drawEllipse(centreX: 250, centreY: 20, width: 480, height: 350)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 475, height: 425)
 
-//Second line of Rainbow
 canvas.borderColor = Color.orange
-canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 20
-canvas.drawEllipse(centreX: 250, centreY: 20, width: 440, height: 320)
-    
-//Third line of Rainbow
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 425, height: 385)
+
 canvas.borderColor = Color.yellow
-canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth = 20
-canvas.drawEllipse(centreX: 250, centreY: 20, width: 420, height: 300)
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 375, height: 345)
+
+canvas.borderColor = Color.green
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 325, height: 305)
+
+canvas.borderColor = Color.blue
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 275, height: 265)
+
+canvas.borderColor = Color.purple
+canvas.drawEllipse(centreX: 250, centreY: 0, width: 225, height: 225)
 
 
-//: ## Template code
-//: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
+
+
+
+
+
+
+////: ## Template code
+////: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
